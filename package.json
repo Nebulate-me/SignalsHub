@@ -1,0 +1,23 @@
+{
+  "name": "com.nebulateme.SignalsHub",
+  "version": "1.0.0",
+  "displayName": "SignalsHub",
+  "description": "Events bus for Unity",
+  "unity": "2020.3",
+  "unityRelease": "42f1",
+  "documentationUrl": "https://github.com/kutase/SignalsHub",
+  "changelogUrl": "https://github.com/kutase/SignalsHub",
+  "licensesUrl": "https://github.com/kutase/SignalsHub/blob/main/LICENSE",
+  "dependencies": {
+ },
+ "keywords": [
+    "event",
+    "signal",
+    "bus"
+  ],
+  "author": {
+    "name": "Nebulate.me",
+    "email": "admin@nebulate.me",
+    "url": "https://nebulate.me"
+  }
+}

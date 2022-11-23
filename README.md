@@ -1,7 +1,7 @@
 # SignalsHub
-## Events bus for Unity
+Events bus for Unity
 
-How to use:
+### How to use
 
 - Put `Dispatcher.cs` script on any gameObject in your scene.
 
@@ -39,3 +39,7 @@ SignalsHub.DispatchAsync<TestSignal>(new TestSignal
     Counter = 1337,
 })
 ```
+
+### How to install
+
+In Package Manager click `+` -> `Add package from git URL...` and paste `https://github.com/kutase/SignalsHub.git`

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace _Scripts.Signals
+namespace Signals
 {
     public class Dispatcher : MonoBehaviour
     {

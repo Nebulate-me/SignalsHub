@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _Scripts.Signals
+namespace Signals
 {
     public class SignalListener<T> : ISignalListener<T>
     {
         private readonly List<Subscriber> subscribers = new List<Subscriber>();
         private readonly List<Subscriber> removedSubscribers = new List<Subscriber>();
+
         private bool inProcess;
 
         public void AddListener(Action<T> listener, bool once)

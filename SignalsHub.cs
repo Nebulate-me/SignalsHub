@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _Scripts.Signals
+namespace Signals
 {
     public static class SignalsHub
     {

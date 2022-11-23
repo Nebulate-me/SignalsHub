@@ -1,4 +1,4 @@
-﻿namespace _Scripts.Signals
+﻿namespace Signals
 {
     public interface ISignal
     {

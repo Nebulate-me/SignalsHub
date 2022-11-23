@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _Scripts.Signals
+namespace Signals
 {
     public interface ISignalHandler : IDisposable
     {

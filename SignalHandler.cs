@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace _Scripts.Signals
+namespace Signals
 {
     public class SignalHandler<T> : ISignalHandler
     {

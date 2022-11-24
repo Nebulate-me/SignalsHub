@@ -10,6 +10,7 @@ namespace Signals
     {
         void AddListener(Action<T> listener, bool once);
         void RemoveListener(Action<T> listener);
+        void RemoveAllListeners();
         void Handle(T data);
     }
 }

@@ -22,6 +22,12 @@ namespace Signals
             On<TSignal>().RemoveListener(listener);
         }
 
+        public static void RemoveAllListeners<TSignal>()
+        {
+            var listener = GetListener<TSignal>();
+            listener.RemoveAllListeners();
+        }
+
         public static void DispatchAsync<TSignal>(TSignal data)
         {
             var listener = GetListener<TSignal>();

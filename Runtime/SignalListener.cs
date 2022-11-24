@@ -32,6 +32,14 @@ namespace Signals
                 subscribers.Remove(subscriber);
         }
 
+        public void RemoveAllListeners()
+        {
+            if (inProcess)
+                removedSubscribers.AddRange(subscribers);
+            else
+                subscribers.Clear();
+        }
+
         public void Handle(T data)
         {
             inProcess = true;

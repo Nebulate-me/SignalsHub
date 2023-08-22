@@ -24,6 +24,7 @@ namespace Signals
         public static void DispatchSync(ISignalHandler handleSignal)
         {
             handleSignal.Execute();
+            handleSignal.Dispose();
         }
     }
 }

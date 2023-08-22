@@ -40,6 +40,16 @@ namespace Signals
             Dispatcher.DispatchAsync(signalHandler);
         }
 
+        public static void DispatchSync<TSignal>(TSignal data)
+        {
+            var listener = GetListener<TSignal>();
+            if (listener == null)
+                return;
+
+            var signalHandler = SignalHandler<TSignal>.Pool.Spawn(data, listener);
+            Dispatcher.DispatchSync(signalHandler);
+        }
+
         private static ISignalListener<TSignal> On<TSignal>()
         {
             var listener = GetListener<TSignal>();

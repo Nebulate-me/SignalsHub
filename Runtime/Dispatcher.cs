@@ -20,5 +20,10 @@ namespace Signals
         {
             NotProcessedSignals.Enqueue(handleSignal);
         }
+
+        public static void DispatchSync(ISignalHandler handleSignal)
+        {
+            handleSignal.Execute();
+        }
     }
 }
